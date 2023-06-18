@@ -1,14 +1,28 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+# サンプルアプリケーション
 
+静的なフロントエンドと Web API から成る、足し算アプリケーションです。
 
-Hi there! Welcome to AWS Cloud9!
+## 開発モードでの起動手順
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
+サンプルアプリケーションは、以下の手順で開発モードで起動します。
 
-Happy coding!
+```console
+cd backend/
+npm ci
+npm run dev
+```
+
+起動したら、ブラウザで http://localhost:8080 にアクセスしてください。
+
+Cloud9 の場合は、「Tools」>「Preview」>「Preview Running Application」でプレビューを起動して、「Pop Out Into New Window」でブラウザの別タブでアクセスしてください。
+
+## バックエンドをビルドして実行する手順
+
+バックエンドをビルドして実行する場合は、以下のコマンドを実行してください。
+
+```console
+cd backend/
+npm ci
+npm run build
+node dist/index.js
+```
