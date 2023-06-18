@@ -4,6 +4,9 @@ on:
   push:
     branchs:
       - main
+  schedule: 
+    # 日本時間で毎晩２１時
+    - cron: '0 12 * * *'
 
 defaults:
   run:
